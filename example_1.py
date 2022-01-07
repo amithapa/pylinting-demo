@@ -1,3 +1,4 @@
+import logging
 def is_unique(s):
     s = list(s)
     s.sort()
