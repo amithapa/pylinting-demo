@@ -1,10 +1,6 @@
 def is_unique(s):
-    s = list(
-		s)
-    s.sort(
-
-
-	)
+    s = list(s)
+    s.sort()
 
     for i in range(len(s) - 1):
         if s[i] == s[i + 1]:
