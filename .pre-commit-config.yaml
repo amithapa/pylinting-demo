@@ -10,3 +10,4 @@ repos:
     hooks:
     -   id: black
         exclude: "samples"
+        args: ["-l 88", "--diff"]
