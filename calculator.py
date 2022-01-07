@@ -7,3 +7,6 @@ class Calculator:
 
     def difference(self, x, y):
         return x - y
+
+    def division(self, x, y):
+        return x / y
