@@ -8,10 +8,10 @@ repos:
 -   repo: https://github.com/psf/black
     rev: 21.12b0
     hooks:
-    -   id: black
-        args: [-l 88]
-        exclude: "samples"
-        # args: ["-l", "88", "--diff"]
+    - id: black
+      args: [-l 88]
+      exclude: "samples"
+      # args: ["-l", "88", "--diff"]
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.910-1
     hooks:
