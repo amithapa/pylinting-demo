@@ -9,7 +9,7 @@ repos:
     rev: 21.12b0
     hooks:
     - id: black
-      args: [-l 88]
+      args: [., -l 88]
       exclude: "samples"
       # args: ["-l", "88", "--diff"]
 -   repo: https://github.com/pre-commit/mirrors-mypy
