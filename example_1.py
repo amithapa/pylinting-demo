@@ -3,7 +3,9 @@ def is_unique(
 			):
 	s = list(s
 				)
-	s.sort()
+	s.sort(
+        
+    )
 
 
 	for i in range(len(s) - 1):
