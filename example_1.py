@@ -1,6 +1,7 @@
 import logging
 def is_unique(s):
-    s = list(s)
+    s = list(
+		s)
     s.sort()
 
     for i in range(len(s) - 1):
