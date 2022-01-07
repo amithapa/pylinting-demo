@@ -1,13 +1,13 @@
 name: CodeCov
 on: [push, pull_request]
 jobs:
-  run:
+  lin:
     runs-on: ubuntu-latest
     env:
       OS: ubuntu-latest
       PYTHON: '3.9'
     steps:
-    - uses: checkout@v2
+    - uses: actions/checkout@v2
       with:
         fetch-depth: '2'
 
