@@ -1,18 +1,26 @@
-from random import randint
+"""
+Calculator class defination
+"""
+# from random import randint
 from typing import Union
 
 
-class Calculator:
-    def add(self, x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
-        return x + y
+def add(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
+    """
+    Adding number functionality
+    """
+    return x + y
 
-    def difference(
-        self, x: Union[int, float], y: Union[int, float]
-    ) -> Union[int, float]:
-        return x - y
 
-    def division(self, x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
-        return x / y
+def difference(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
+    """
+    Difference
+    """
+    return x - y
 
-    def hello(self) -> None:
-        print("")
+
+def division(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
+    """
+    Division
+    """
+    return x / y
