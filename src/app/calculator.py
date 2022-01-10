@@ -9,6 +9,7 @@ def add(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
     """
     Adding number functionality
     """
+
     return x + y
 
 
