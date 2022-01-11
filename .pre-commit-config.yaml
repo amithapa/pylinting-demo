@@ -8,7 +8,19 @@ repos:
 -   repo: https://github.com/psf/black
     rev: 21.12b0
     hooks:
-    -   id: black
-        args: [-l 88]
-        exclude: "samples"
-        # args: ["-l", "88", "--diff"]
+    - id: black
+      args: [., -l 88]
+      exclude: "samples"
+      # args: ["-l", "88", "--diff"]
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.910-1
+    hooks:
+    - id: mypy
+      exclude: tests/
+      additional_dependencies:
+        - types-dataclasses >= 0.1.3
+        - types-PyYAML
+        - tomli >= 0.2.6, < 2.0.0
+        - types-typed-ast >= 1.4.1
+        - click >= 8.0.0
+        - platformdirs >= 2.1.0

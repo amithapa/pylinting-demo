@@ -12,3 +12,8 @@ pre-commit install
 ```bash
 pre-commit run --all-files
 ```
+
+```
+pytest -v
+coverage run -m pytest -v && coverage report
+```
