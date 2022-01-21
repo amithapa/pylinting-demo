@@ -1,0 +1,31 @@
+name: Checks
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the dev branch
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Mypy
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.9
+    - name: Install Dependencies
+      run: |
+        pip install mypy==0.931 black==21.12b0
+    - name: mypy typechecks
+      run: |
+        mypy .
+    - name: black code formatting
+      run: |
+        black . --check --diff
