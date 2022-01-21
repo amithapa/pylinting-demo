@@ -1,4 +1,4 @@
-name: Checks
+name: Code Quality Checks
 
 on:
   # Trigger the workflow on push or pull request,
@@ -28,4 +28,4 @@ jobs:
         mypy .
     - name: black code formatting
       run: |
-        black . --check --diff
+        black . --check --diff --color
